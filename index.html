@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felices 5 Meses ❤️</title>
 
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ff9ec4,#ffd6e8);
+text-align:center;
+padding:30px;
+}
+
+h1{
+color:white;
+font-size:42px;
+}
+
+button{
+width:260px;
+padding:15px;
+margin:10px;
+border:none;
+border-radius:15px;
+font-size:18px;
+cursor:pointer;
+}
+
+img{
+width:280px;
+border-radius:20px;
+margin:10px;
+}
+
+#contenido{
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>❤️ Felices 5 Meses ❤️</h1>
+
+<p>Para la persona más especial de mi vida</p>
+
+<button onclick="mostrarCarta()">💌 Carta</button>
+<button onclick="mostrarSorpresa()">🎁 Sorpresa</button>
+
+<div id="contenido"></div>
+
+<script>
+function mostrarCarta(){
+document.getElementById("contenido").innerHTML=`
+<h2>Mi amor ❤️</h2>
+<p>
+Gracias por estos 5 meses tan bonitos.
+Cada día contigo es especial.
+Te amo muchísimo.
+</p>
+`;
+}
+
+function mostrarSorpresa(){
+document.getElementById("contenido").innerHTML=`
+<h1>❤️ TE AMO ❤️</h1>
+<p>Y quiero seguir creando recuerdos contigo.</p>
+`;
+}
+</script>
+
+</body>
+</html>
